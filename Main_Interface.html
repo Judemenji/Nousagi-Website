@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Nousagi, a space for creativity and innovation.">
+    <title>Nousagi</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Orbitron', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background: #444;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .menu li {
+            position: relative;
+        }
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+        }
+        .menu a:hover {
+            background: #666;
+            border-radius: 5px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #555;
+            top: 100%;
+            left: 0;
+            min-width: 150px;
+            list-style: none;
+            padding: 0;
+            z-index: 10;
+        }
+        .dropdown-content li a {
+            display: block;
+            text-align: left;
+            padding: 0.5rem 1rem;
+            color: #fff;
+        }
+        .dropdown-content li a:hover {
+            background: #777;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Header and Footer */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        main h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        main p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li class="dropdown">
+                <a href="#more" class="dropbtn">More</a>
+                <ul class="dropdown-content">
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to Nousagi</h1>
+    </header>
+    <main>
+        <h2>Nousagi means Wild Rabbit in Japanese</h2>
+        <p>
+            Nousagi
+        </p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nousagi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
