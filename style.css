@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Orbitron', sans-serif;
     margin: 0;
@@ -22,7 +23,7 @@ body {
     text-decoration: none;
   }
   
- 
+  /* Header Styles */
   .header {
     background-color: #1b1b1b;
     padding: 20px;
@@ -39,6 +40,7 @@ body {
   .nav ul {
     display: flex;
     gap: 20px;
+    list-style: none;
   }
   
   .nav a {
@@ -50,7 +52,7 @@ body {
     color: #ffffff;
   }
   
-  
+  /* Hero Section */
   .hero {
     background: linear-gradient(45deg, #1b1b1b, #4caf50);
     text-align: center;
@@ -72,6 +74,7 @@ body {
     border-radius: 25px;
     font-weight: bold;
     transition: background 0.3s, transform 0.2s;
+    border: 2px solid transparent;
   }
   
   .btn-primary {
@@ -95,11 +98,102 @@ body {
     color: #000;
   }
   
+  /* Member Section */
+  .members {
+    padding: 50px 20px;
+  }
   
+  .member-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .member {
+    background-color: #1b1b1b;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px);
+  }
+  
+  .member img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Section */
   .footer {
     background-color: #1b1b1b;
     color: #4caf50;
     text-align: center;
     padding: 10px 0;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .member-list {
+      display: block;
+    }
+  
+    .member {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .btn {
+      padding: 6px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Loading Spinner */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #4caf50;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    z-index: 1000;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  body.loaded::before {
+    display: none;
   }
   
