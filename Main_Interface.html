@@ -1,149 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Nousagi, a space for creativity and innovation.">
-    <title>Nousagi</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Orbitron', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-
-        /* Navigation Styles */
-        nav {
-            background: #444;
-            padding: 0.5rem 0;
-            text-align: center;
-        }
-        .menu {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-        .menu li {
-            position: relative;
-        }
-        .menu a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2rem;
-            padding: 0.5rem 1rem;
-        }
-        .menu a:hover {
-            background: #666;
-            border-radius: 5px;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background: #555;
-            top: 100%;
-            left: 0;
-            min-width: 150px;
-            list-style: none;
-            padding: 0;
-            z-index: 10;
-        }
-        .dropdown-content li a {
-            display: block;
-            text-align: left;
-            padding: 0.5rem 1rem;
-            color: #fff;
-        }
-        .dropdown-content li a:hover {
-            background: #777;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* Header and Footer */
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        main {
-            padding: 2rem;
-            text-align: center;
-        }
-        main h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        main p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nousagi Members</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <ul class="menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li class="dropdown">
-                <a href="#more" class="dropbtn">More</a>
-                <ul class="dropdown-content">
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <img src="images/logo.png" alt="Nousagi Logo" class="logo">
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#members">Members</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
-    <header>
-        <h1>Welcome to Nousagi</h1>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Nousagi</h2>
-                <p>
-                    Nousagi is derived from the word "Wild Rabbit in Japanese"
-                </p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>
-                We offer a wide range of services to support creative endeavors, including design consulting, coding workshops, and more.
-            </p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>
-                Got questions? Reach out to us through our contact form or email us at contact@nousagi.com.
-            </p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Nousagi. All rights reserved.</p>
-    </footer>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Nousagi Members</h1>
+      <p>A community of passionate individuals united under the Nousagi banner!</p>
+      <a href="#members" class="btn btn-primary">Meet Our Members</a>
+      <a href="#events" class="btn btn-secondary">Upcoming Events</a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Nousagi</h2>
+      <p>Nousagi Members is a community group focused on collaboration, fun, and supporting one another. Whether you're here for games, discussions, or to share your creativity, this is your space to shine.</p>
+    </div>
+  </section>
+
+  <!-- Members Section -->
+  <section id="members" class="members">
+    <div class="container">
+      <h2>Our Members</h2>
+      <div class="member-list">
+        <div class="member">
+          <img src="images/member1.jpg" alt="Member 1">
+          <h3>Member 1</h3>
+          <p>Role or Description</p>
+        </div>
+        <div class="member">
+          <img src="images/member2.jpg" alt="Member 2">
+          <h3>Member 2</h3>
+          <p>Role or Description</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Nousagi Members. All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
