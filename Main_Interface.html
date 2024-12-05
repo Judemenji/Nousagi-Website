@@ -4,68 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nousagi Members</title>
-  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header Section -->
   <header class="header">
-    <div class="container">
-      <img src="images/logo.png" alt="Nousagi Logo" class="logo">
-      <nav class="nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#members">Members</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <img src="logo.png" alt="Nousagi Logo" class="logo">
+    <nav class="nav">
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#members">Members</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Welcome to Nousagi Members</h1>
-      <p>A community of passionate individuals united under the Nousagi banner!</p>
-      <a href="#members" class="btn btn-primary">Meet Our Members</a>
-      <a href="#events" class="btn btn-secondary">Upcoming Events</a>
-    </div>
+  <section class="hero">
+    <h1>Welcome to Nousagi Members</h1>
+    <p>A community of passionate individuals united under the Nousagi banner!</p>
+    <a href="#members" class="btn btn-primary">Meet Our Members</a>
   </section>
 
-  <!-- About Us Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Nousagi</h2>
-      <p>Nousagi Members is a community group focused on collaboration, fun, and supporting one another. Whether you're here for games, discussions, or to share your creativity, this is your space to shine.</p>
-    </div>
+  <section id="about" class="container">
+    <h2>About Nousagi</h2>
+    <p>Nousagi Members is a community group focused on collaboration, fun, and supporting one another.</p>
   </section>
 
-  <!-- Members Section -->
-  <section id="members" class="members">
-    <div class="container">
-      <h2>Our Members</h2>
-      <div class="member-list">
-        <div class="member">
-          <img src="images/member1.jpg" alt="Member 1">
-          <h3>Member 1</h3>
-          <p>Role or Description</p>
-        </div>
-        <div class="member">
-          <img src="images/member2.jpg" alt="Member 2">
-          <h3>Member 2</h3>
-          <p>Role or Description</p>
-        </div>
+  <section id="members" class="members container">
+    <h2>Our Members</h2>
+    <div class="member-list">
+      <div class="member">
+        <img src="member1.jpg" alt="Member 1">
+        <h3>Member Name</h3>
+        <p>Role or Description</p>
+      </div>
+      <div class="member">
+        <img src="member2.jpg" alt="Member 2">
+        <h3>Member Name</h3>
+        <p>Role or Description</p>
       </div>
     </div>
   </section>
 
-  <!-- Footer Section -->
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2024 Nousagi Members. All Rights Reserved.</p>
-    </div>
+    <p>&copy; 2024 Nousagi Members. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    // Remove loading spinner after page load
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+  </script>
 </body>
 </html>
